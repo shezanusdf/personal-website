@@ -1,11 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 h1 {
     font-family: 'Inter', sans-serif;
-    letter-spacing:-3px;
-    margin-left:80px
+    letter-spacing:-1.5px;
+    margin-left:150px;
+    font-size:69px;
+    color: #1C1C1E
+}
+h3 {font-family: 'Inter', sans-serif;
+    letter-spacing:-1.5px;
+    margin-left:150px;
+    color: #8f8a87ff;
+    font-size:40px;
+  }
+
+p {
+  font-family: 'Inter', sans-serif;
+  letter-spacing:-0.5px;
+  font-size:20px;
+  font-weight:medium;
+  margin-left:150px;
+  color: #8f8a87ff;
+  text-shadow: 0 0 0.5px currentColor;
 }
 body {
-  font-family: 'Inter', sans-serif;
-  letter-spacing:-1px
-  font-size:25px
+    background: #ffffff
 }
+nav {
+  font-size:20px;
+  font-family:'Playfair Display';
+  display:flex;
+  flex-direction:column;
+  text-align:right;
+  gap:10px;
+  padding:40px;
+  position:fixed;
+  right:0
+} 
