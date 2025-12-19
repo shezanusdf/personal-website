@@ -8,13 +8,4 @@ style.css – Responsive styles
 
 Fonts: Inter (SF alternative) for body and Playfair Display for nav.
 
-Layout: Fixed vertical navbar on the right and boxed content on the left.
 
-Tech Stack
-HTML5
-CSS3
-
-Notes / Future Improvements
-
-Add more projects and portfolio items.
-Keep the copywriting style raw and punchy
