@@ -1,11 +1,18 @@
-This is my personal website, a place where I share my story, projects, and the stuff that excites me.
+# Personal Website
 
-What’s in this repo
+This is my personal website, a place where I share my story and the stuff that excites me.
 
-index.html – The main page
+## What’s in this repo
 
-style.css – Responsive styles
+- **index.html**  
+  The main landing page.
 
-Fonts: Inter (SF alternative) for body and Playfair Display for nav.
+- **style.css**  
+  Responsive styles for layout and typography.
+
+## Fonts
+
+- **Inter** - used for body text (SF alternative)  
+- **Playfair Display** - used for the navigation
 
 
