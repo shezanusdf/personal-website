@@ -1,4 +1,4 @@
-This is my personal website, a place where I share my story, projects, and the stuff that excites me. Built to be clean, responsive, and punchy, it shows my journey as a young entrepreneur and creator.
+This is my personal website, a place where I share my story, projects, and the stuff that excites me.
 
 What’s in this repo
 
