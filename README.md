@@ -12,7 +12,7 @@ This is my personal website, a place where I share my story and the stuff that e
 
 ## Fonts
 
-- **Inter** - used for body text (SF alternative)  
+- **Inter** - used for body text
 - **Playfair Display** - used for the navigation
 
 
