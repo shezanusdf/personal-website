@@ -29,8 +29,8 @@ body {
 
 /* CONTENT BOXED ON LEFT */
 .content {
-    max-width: 700px;          /* keeps text readable */
-    margin-left: 70px;         /* space from left edge */
+    max-width: 650px;          /* keeps text readable */
+    margin-left: 4.375rem;         /* space from left edge */
     margin-right: 260px;       /* space between content and navbar */
     padding: 40px 20px;
     text-align: left;
@@ -53,8 +53,170 @@ p {
     letter-spacing: -0.5px;
     margin-bottom: 20px;
 }
-    
-/* Default styles (for desktop) */
+p, .star-list {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -0.03125rem;
+    margin-bottom: 1.25rem;
+}
+
+.star-list {
+    list-style: none; /* remove default bullets */
+    padding-left: 1.2em; /* indent to match normal list look */
+}
+
+.star-list li::before {
+    content: "* "; /* your custom bullet */
+    margin-left: -1.2em; /* align bullet with text */
+}
+
+/* Letter container */
+#letter-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.25rem; 
+    margin-left: 4.375rem; /* 70px - aligns with .content */
+    padding : 0px 20px; /* 20px - optional, keeps breathing room */
+}
+
+#letter-window.minimized #window-body {
+    display: none;
+}
+
+/* Retro window */
+#letter-window {
+    width: 37.5rem; /* 600px */
+    max-width: 90%;
+    border: 0.125rem solid #888; /* 2px */
+    box-shadow: 0.3125rem 0.3125rem 0 #555; /* 5px 5px - old-school shadow */
+    background: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Title bar */
+#title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000080; /* classic Win95 blue */
+    color: white;
+    padding: 0.1875rem 0.25rem; /* 3px 4px */
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem; /* 14.4px */
+    user-select: none;
+}
+
+/* Window control container */
+.win-controls {
+    display: flex;
+    gap: 0.375rem; /* 6px */
+    padding-left: 0.25rem; /* 4px */
+}
+
+/* Stoplight buttons (Mac-style) */
+.win-btn {
+    width: 0.75rem; /* 12px */
+    height: 0.75rem; /* 12px */
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0.0625rem rgba(0,0,0,0.25); /* 1px */
+    font-size: 0; /* hide text symbols */
+}
+
+/* Individual colors */
+.win-btn.close {
+    background: #ff5f57;
+}
+
+.win-btn.minimize {
+    background: #ffbd2e;
+}
+
+.win-btn.maximize {
+    background: #28c840;
+}
+
+/* Optional subtle hover (feels very macOS) */
+.win-btn:hover {
+    filter: brightness(0.95);
+}
+
+.win-btn:active {
+    filter: brightness(0.85);
+}
+
+#letter-window.maxed {
+    width: 90%;
+}
+
+/* Editable letter area */
+#letter {
+    min-height: 5rem; 
+    padding: 0.9375rem; /* 15px */
+    background: #fff;
+    color: #000;
+    font-size: 1.3rem; /* 16px */
+    letter-spacing: -0.03125rem; /* -0.5px */
+    outline: none; /* remove focus border */
+    white-space: pre-wrap; /* preserve line breaks */
+}
+
+/* Optional: retro font look */
+#letter::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+#letter-form {
+    margin-top: 0.9375rem; /* 15px */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* 8px */
+    padding: 0.625rem; /* 10px */
+}
+
+#letter-form label {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 0.9rem; /* 14.4px */
+}
+
+#letter-form input {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.375rem; /* 4px 6px */
+    border: 0.125rem solid #fff; /* 2px */
+    border-bottom-color: #808080;
+    border-right-color: #808080;
+    background: #c0c0c0;
+    box-shadow: inset -0.0625rem -0.0625rem 0 #fff, inset 0.0625rem 0.0625rem 0 #808080; /* -1px -1px, 1px 1px */
+}
+
+#letter-form input:focus {
+    outline: none;
+}
+
+#schedule-button {
+    margin-top: 0.5rem; /* 8px */
+    background: #c0c0c0;
+    border: 0.125rem solid #fff; /* 2px */
+    border-bottom-color: #808080;
+    border-right-color: #808080;
+    padding: 0.3125rem 0.9375rem; /* 5px 15px */
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset -0.0625rem -0.0625rem 0 #fff, inset 0.0625rem 0.0625rem 0 #808080;
+}
+
+#schedule-button:active {
+    box-shadow: inset 0.0625rem 0.0625rem 0 #fff, inset -0.0625rem -0.0625rem 0 #808080;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
 
 /* Tablets */
 @media (max-width: 1024px) {
